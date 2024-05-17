@@ -37,4 +37,7 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 	TArray<FVector> GetRandomSpawnLocations();
+
+	UFUNCTION(BlueprintPure)
+	TSubclassOf<APawn> GetRandomMinionClass();
 };
